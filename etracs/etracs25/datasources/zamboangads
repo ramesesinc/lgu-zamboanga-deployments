@@ -1,5 +1,5 @@
 dialect=mssql
 driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver
-url=jdbc:sqlserver://192.168.1.10/bplssvr_boss;DatabaseName=CityTreasurer
+url=jdbc:sqlserver://192.168.1.10\bplssvr_boss;DatabaseName=CityTreasurer
 user=sa
 pwd=csd@dmin2017
