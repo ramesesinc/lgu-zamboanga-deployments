@@ -59,3 +59,4 @@ services:
     volumes:
       - ./etracs25/datasources:/apps/server/workspace/services/datasources
       - ./etracs25/modules:/apps/server/workspace/services/apps/etracs25/modules
+      - ./etracs25/adapters:/apps/server/workspace/services/apps/etracs25/adapters/ext
