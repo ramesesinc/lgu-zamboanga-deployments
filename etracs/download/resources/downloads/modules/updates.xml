@@ -82,7 +82,7 @@ socketio.host=192.168.1.190:7080
 	<module file="rameses-gov-etracs-rptis-city.jar" version="2.60"/>
 	<module file="rameses-gov-etracs-rptis-landtax.jar" version="2.61"/>
 	<module file="rameses-gov-etracs-rptis-landtax-report.jar" version="2.61"/>
-	<module file="rameses-gov-etracs-rptis.jar" version="2.62"/>
+	<module file="rameses-gov-etracs-rptis.jar" version="2.63"/>
 	<module file="rameses-gov-etracs-rptis-report.jar" version="2.61"/>
 	<module file="rameses-gov-etracs-signatory-template.jar" version="2.60"/>
 	
