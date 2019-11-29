@@ -107,6 +107,7 @@ from (
 			from VIEW_ETRACS_REGULATORIES
 			where applpermitnr in (select distinct applpermitnr from application where businessid = $P{bin}) 
 				and cyear <= $P{year} 
+				and cyear = $P{currentyear} 
 
 			union all 
 
