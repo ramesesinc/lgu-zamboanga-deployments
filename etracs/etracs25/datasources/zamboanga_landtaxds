@@ -1,0 +1,5 @@
+dialect=mssql
+driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver
+url=jdbc:sqlserver://192.168.1.6;DatabaseName=LandTax
+user=sa
+pwd=csd@dmin
