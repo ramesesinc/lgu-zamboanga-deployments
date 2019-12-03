@@ -27,6 +27,7 @@ socketio.host=192.168.1.190:7080
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-ovs.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-bpls.jar" version="1.00"/>
+	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.00"/>
 
 
