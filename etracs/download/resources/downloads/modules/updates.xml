@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20191128 (City of Zamboanga)
+app.title=ETRACS 2.5 build 05 20191203 (City of Zamboanga)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -28,7 +28,8 @@ socketio.host=192.168.1.190:7080
 	<module file="custom/gov-zamboanga-treasury-ovs.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-bpls.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-landtax.jar" version="1.00"/>
-
+	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.00"/>
+	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.00"/>
 
 	<!-- core libraries -->
 	<module file="core/osiris2-client-themes.jar" version="2.60"/>
