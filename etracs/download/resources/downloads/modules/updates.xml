@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20191203 (City of Zamboanga)
+app.title=ETRACS 2.5 build 05 20191204 (City of Zamboanga)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -21,7 +21,7 @@ socketio.host=192.168.1.190:7080
 <modules> 
 
 	<!-- custom libraries -->
-	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.00"/>
+	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.01"/>
 	<module file="custom/gov-lgu-zamboanga-af51.jar" version="1.00"/>
 	<module file="custom/gov-lgu-zamboanga-logo.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.00"/>
