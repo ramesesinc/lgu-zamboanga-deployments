@@ -21,7 +21,7 @@ socketio.host=192.168.1.190:7080
 <modules> 
 
 	<!-- custom libraries -->
-	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.02"/>
+	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.03"/>
 	<module file="custom/gov-lgu-zamboanga-af51.jar" version="1.00"/>
 	<module file="custom/gov-lgu-zamboanga-logo.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.00"/>
