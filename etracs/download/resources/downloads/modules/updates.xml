@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20191206_0924 (City of Zamboanga)
+app.title=ETRACS 2.5 build 05 20191206_1337 (City of Zamboanga)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -68,7 +68,7 @@ socketio.host=192.168.1.190:7080
 	<module file="rameses-gov-epayment.jar" version="2.60"/>
 	<module file="rameses-gov-epayment-report.jar" version="2.60"/>
 	<module file="rameses-gov-etracs-entity.jar" version="2.60"/>
-	<module file="rameses-gov-etracs-ngas-report.jar" version="2.60"/>
+	<module file="rameses-gov-etracs-ngas-report.jar" version="2.61"/>
 	<module file="rameses-gov-etracs-sre-report.jar" version="2.60"/>
 	<module file="rameses-gov-etracs-tools.jar" version="2.60"/>	
 	<module file="rameses-gov-lgu.jar" version="2.60"/>
