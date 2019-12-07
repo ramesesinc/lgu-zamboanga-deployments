@@ -9,3 +9,4 @@ cd ~/docker/gdx-client
 docker-compose up -d
 
 cd ~/docker
+
