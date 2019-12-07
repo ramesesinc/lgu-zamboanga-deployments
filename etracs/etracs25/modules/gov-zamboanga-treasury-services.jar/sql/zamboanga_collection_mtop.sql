@@ -46,6 +46,11 @@ select *
 from zview_accounts 
 where acctcode = $P{acctcode} and bcode = $P{bclass}
 
+[findViewAccountByAcctId]
+select *, bcode as bclass  
+from zview_accounts 
+where acctid = $P{acctid}
+
 
 [updatePaidStatus]
 update OrderOfPayment set 
@@ -77,3 +82,6 @@ update OrderOfPayment set
 where franchiseid = $P{franchiseid}
 and cyear = $P{cyear}
 and feeid = $P{feeid}
+
+[findExpiry]
+select * from zz_mtop_expiry where year = $P{year}
