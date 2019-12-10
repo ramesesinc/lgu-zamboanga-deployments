@@ -30,6 +30,7 @@ socketio.host=192.168.1.190:7080
 	<module file="custom/gov-zamboanga-support.jar" version="1.07"/>
 	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.00"/>
+	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.00"/>
 
 	<!-- core libraries -->
 	<module file="core/osiris2-client-themes.jar" version="2.60"/>
@@ -85,7 +86,7 @@ socketio.host=192.168.1.190:7080
 	<!-- rptis -->
 	<module file="rameses-gov-etracs-rptis-city.jar" version="2.60"/>
 	<module file="rameses-gov-etracs-rptis-landtax.jar" version="2.63"/>
-	<module file="rameses-gov-etracs-rptis-landtax-report.jar" version="2.61"/>
+	<module file="rameses-gov-etracs-rptis-landtax-report.jar" version="2.62"/>
 	<module file="rameses-gov-etracs-rptis.jar" version="2.66"/>
 	<module file="rameses-gov-etracs-rptis-report.jar" version="2.61"/>
 	<module file="rameses-gov-etracs-signatory-template.jar" version="2.60"/>
