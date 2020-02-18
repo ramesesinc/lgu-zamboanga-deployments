@@ -1,0 +1,26 @@
+import com.rameses.annotations.*
+import com.rameses.common.*
+import com.rameses.services.extended.*
+
+
+class ZamboangaRptisFaasInterceptor {
+	@DataContext('rptledger')
+	def em_rptledger
+	
+	@After(pattern="FAASService.updateFaas", index=10000)
+	public void afterUpdateFaas(evt) {
+		def faas = evt.result
+		updateLedgerInfo(faas)
+	}
+
+	void updateLedgerInfo(faas) {
+		def ledger = em_rptledger.select('objid').find([faasid: faas.objid]).first()
+		if (ledger) {
+			def info = [:]
+			info.taxpayer = faas.taxpayer
+			info.owner = faas.owner
+			info.administrator = faas.administrator
+			em_rptledger.find([objid: ledger.objid]).update(info)
+		}
+	}
+}
