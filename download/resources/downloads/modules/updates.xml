@@ -61,7 +61,7 @@ entity.app.context=etracs25
  
 	<!-- etracs -->
 	<module file="etracs/rameses-etracs-main.jar" version="2.50"/>
-	<module file="etracs/rameses-gov-etracs-entity.jar" version="2.51"/>
+	<module file="etracs/rameses-gov-etracs-entity.jar" version="2.52"/>
 	<module file="etracs/rameses-gov-etracs-ngas-report.jar" version="2.50"/>
 	<module file="etracs/rameses-gov-etracs-sre-report.jar" version="2.50"/>
 	<module file="etracs/rameses-gov-etracs-tools.jar" version="2.50"/>	
