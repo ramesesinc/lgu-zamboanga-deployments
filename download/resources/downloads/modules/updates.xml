@@ -54,7 +54,7 @@ entity.app.context=etracs25
 	<module file="shared/rameses-workflow-mgmt.jar" version="2.50"/>
 	<module file="shared/rameses-enterprise.jar" version="2.50"/>
 	<module file="shared/rameses-enterprise-admin.jar" version="2.50"/>
-	<module file="shared/rameses-enterprise-entity.jar" version="2.50"/>
+	<module file="shared/rameses-enterprise-entity.jar" version="2.51"/>
 	<module file="shared/rameses-enterprise-entity-tool.jar" version="2.50"/>
 	<module file="shared/rameses-enterprise-financial.jar" version="2.50"/>
 	<module file="shared/rameses-client-notification2.jar" version="2.50"/>	
