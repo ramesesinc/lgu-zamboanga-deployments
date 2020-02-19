@@ -95,5 +95,8 @@ entity.app.context=etracs25
 
 	<!-- queue -->
 	<module file="queue/rameses-queueing.jar" version="2.50"/>
+
+	<!-- ctc -->
+	<module file="ctc/rameses-gov-etracs-ctc.jar" version="2.50"/>	
 </modules>
 </app>
