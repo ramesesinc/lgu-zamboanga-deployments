@@ -80,6 +80,7 @@ entity.app.context=etracs25
 	<module file="treasury/rameses-gov-treasury.jar" version="2.50"/>
 	<module file="treasury/rameses-gov-treasury-report.jar" version="2.50"/>
 	<module file="treasury/rameses-gov-treasury-tool.jar" version="2.50"/>
+	<module file="treasury/rameses-gov-treasury-af51.jar" version="2.50"/>
 
 	<!-- bpls -->
 	<module file="bpls/rameses-gov-etracs-bpls.jar" version="2.50"/>
@@ -95,5 +96,8 @@ entity.app.context=etracs25
 
 	<!-- queue -->
 	<module file="queue/rameses-queueing.jar" version="2.50"/>
+
+	<!-- ctc -->
+	<module file="ctc/rameses-gov-etracs-ctc.jar" version="2.50"/>	
 </modules>
 </app>
