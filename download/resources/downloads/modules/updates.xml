@@ -21,7 +21,7 @@ entity.app.context=etracs25
 	<!-- custom -->
 	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.05"/>
 	<module file="custom/gov-lgu-zamboanga-af51.jar" version="1.00"/>
-	<module file="custom/gov-lgu-zamboanga-logo.jar" version="1.00"/>
+	<module file="custom/gov-lgu-zamboanga-logo.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-ovs.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-bpls.jar" version="1.00"/>
@@ -29,6 +29,7 @@ entity.app.context=etracs25
 	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.00"/>
+	<module file="custom/gov-lgu-zamboanga-rptis-report-td.jar" version="1.00"/>
 
 	<!-- core -->
 	<module file="core/osiris2-client-themes.jar" version="2.50"/>
