@@ -25,7 +25,7 @@ entity.app.context=etracs25
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-ovs.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-treasury-bpls.jar" version="1.00"/>
-	<module file="custom/gov-zamboanga-support.jar" version="1.07"/>
+	<module file="custom/gov-zamboanga-support.jar" version="1.08"/>
 	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.00"/>
 	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.00"/>
