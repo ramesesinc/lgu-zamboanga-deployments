@@ -19,7 +19,7 @@ entity.app.context=etracs25
 </env>
 <modules> 
 	<!-- custom -->
-	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.05"/>
+	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.06"/>
 	<module file="custom/gov-lgu-zamboanga-af51.jar" version="1.00"/>
 	<module file="custom/gov-lgu-zamboanga-logo.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.00"/>
