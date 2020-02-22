@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20200221_1841 (CITY OF ZAMBOANGA)
+app.title=ETRACS 2.5 build 05 20200222_1632 (CITY OF ZAMBOANGA)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -79,10 +79,10 @@ entity.app.context=etracs25
 	<!-- treasury -->
 	<module file="treasury/rameses-treasury-common.jar" version="2.51"/>
 	<module file="treasury/rameses-gov-depositslip.jar" version="2.50"/>
-	<module file="treasury/rameses-gov-treasury.jar" version="2.56"/>
+	<module file="treasury/rameses-gov-treasury.jar" version="2.57"/>
 	<module file="treasury/rameses-gov-treasury-report.jar" version="2.50"/>
 	<module file="treasury/rameses-gov-treasury-tool.jar" version="2.50"/>
-	<module file="treasury/rameses-gov-treasury-af51.jar" version="2.51"/>
+	<module file="treasury/rameses-gov-treasury-af51.jar" version="2.52"/>
 
 	<!-- bpls -->
 	<module file="bpls/rameses-gov-etracs-bpls.jar" version="2.50"/>
