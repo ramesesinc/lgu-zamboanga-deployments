@@ -179,8 +179,9 @@ class ZamboangaCollectionMtopService {
 		def item = [:]
 		item.putAll(items[0])
 		item.amount = numSvc.round(amtforpenalty * rate)
-		item.fee = em_treasury.findViewAccountByAcctId([acctid: feeid])
-		return item
+		item.fee = em_treasury.findViewAccountByAcctId([acctid: feeid]);
+		item.fee.feeid = feeid; 
+		return item;
 	}
 
 }
