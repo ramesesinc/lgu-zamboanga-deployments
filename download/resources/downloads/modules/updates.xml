@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20200224_1907 (CITY OF ZAMBOANGA)
+app.title=ETRACS 2.5 build 05 20200224_2002 (CITY OF ZAMBOANGA)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -19,7 +19,7 @@ entity.app.context=etracs25
 </env>
 <modules> 
 	<!-- custom -->
-	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.06"/>
+	<module file="custom/gov-lgu-zamboanga-af56.jar" version="1.07"/>
 	<module file="custom/gov-lgu-zamboanga-af51.jar" version="1.00"/>
 	<module file="custom/gov-lgu-zamboanga-logo.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-mtop.jar" version="1.01"/>
