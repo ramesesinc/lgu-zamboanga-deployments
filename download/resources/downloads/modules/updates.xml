@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20200224_1414 (CITY OF ZAMBOANGA)
+app.title=ETRACS 2.5 build 05 20200224_1907 (CITY OF ZAMBOANGA)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -29,7 +29,7 @@ entity.app.context=etracs25
 
 	<module file="custom/gov-zamboanga-treasury-remittance-report.jar" version="1.04"/>
 	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.01"/>
-	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.00"/>
+	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-rptis-report-td.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-rptis-report-faas.jar" version="1.00"/>
