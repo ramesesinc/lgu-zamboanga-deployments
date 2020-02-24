@@ -4,8 +4,9 @@ import com.rameses.services.extended.*
 
 
 class ZamboangaCollectionOvsInterceptor {
+
 	@Service('ZamboangaCollectionOvsService')
-	def svc
+	def svc;
 	
 	@After(pattern="CashReceiptService.post", eval="#{result.collectiontype?.handler == 'zamboanga_ovs'}")
 	public void afterPost(evt) {
@@ -13,9 +14,15 @@ class ZamboangaCollectionOvsInterceptor {
 		svc.postCollection(receipt)
 	}
 
-	@After(pattern="CashReceiptVoidService.post",index=0,eval="#{result.receipt.collectiontype?.handler=='zamboanga_ovs'}")
+	@After(pattern="CashReceiptVoidService.post", eval="#{result.receipt.collectiontype?.handler=='zamboanga_ovs'}")
 	public void voidReceipt( evt ) {
 		def receipt = evt.args[0].receipt
 		svc.postVoidPayment( receipt )
+	}
+
+	@After(pattern="PersistenceService.read", eval="#{result.collectiontype?.handler == 'zamboanga_ovs'}")
+	public void afterRead( evt ) {
+		def result = evt.result;
+		svc.resolveReceiptForPrinting( result ); 
 	}
 }

@@ -3,6 +3,7 @@ import com.rameses.common.*
 import com.rameses.services.extended.*
 
 class ZamboangaCollectionOvsService {
+
 	@ActiveDB(value="zamboanga_collection_ovs", adapter="zamboanga_treasury")
 	def em
 
@@ -10,7 +11,7 @@ class ZamboangaCollectionOvsService {
 	def em_af51
 
 	@DataContext('zamboanga_af51_ordinance')
-	def em_af51_ordinance
+	def em_af51_ordinance;
 
 	@DataContext('sys_user')
 	def em_user
@@ -38,11 +39,14 @@ class ZamboangaCollectionOvsService {
 
 	@ProxyMethod
 	public void postCollection(receipt) {
-		def af51 = initAf51(receipt)
-		em_af51.create(af51)
-		def o = em_af51.select('orid: {or_id}').find([orno: af51.orno, ordate: receipt.receiptdate, payee: receipt.paidby]).first()
-		af51.orid = o.orid
-		postItems(receipt, af51)
+		def af51 = initAf51(receipt);
+		em_af51.create(af51);
+
+		def o = em_af51.select('orid: {or_id}').find([orno: af51.orno, ordate: receipt.receiptdate, payee: receipt.paidby]).first();
+		af51.orid = o.orid;
+		postItems(receipt, af51);
+
+		resolveReceiptForPrinting( receipt ); 
 	}
 
 
@@ -99,5 +103,38 @@ class ZamboangaCollectionOvsService {
 			item.orid = af51.orid
 			em_af51_ordinance.create(item)
 		}
+	}
+
+
+	@ProxyMethod
+	public void resolveReceiptForPrinting( receipt ) {
+		def buff = new StringBuilder();
+		def items = em_af51_ordinance.find([ orno: receipt.receiptno ]).list(); 
+		if ( items ) {
+			def fo = items.first(); 
+			buff.append("CT:").append( fo.ctno ).append(", "); 
+			buff.append("CTDate:").append( fo.ctdate.toString().split(' ')[0] ).append("\n"); 
+			buff.append( fo.apprehendingoffice ).append("\n"); 
+		}
+
+		if ( receipt.remarks ) { 
+			buff.append( receipt.remarks ); 
+		} 
+
+		receipt.remarks = buff.toString();
+
+		receipt.items.eachWithIndex{ oo,idx-> 
+			if ( idx < items.size()) {
+				buff = new StringBuilder();
+				buff.append( oo.item.title );
+
+				def fi = items.get(idx); 
+				if ( fi.violation ) {
+					buff.append(" - ").append( fi.violation ); 
+				}
+
+				oo.item.title = buff.toString(); 
+			}
+		} 
 	}
 }
