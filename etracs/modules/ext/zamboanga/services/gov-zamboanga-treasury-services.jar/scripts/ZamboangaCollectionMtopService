@@ -176,6 +176,10 @@ class ZamboangaCollectionMtopService {
 	}
 
 	def createItem(items, feeid, amtforpenalty, rate) {
+		if ( amtforpenalty == null ) {
+			amtforpenalty = 0.0;
+		}
+		
 		def item = [:]
 		item.putAll(items[0])
 		item.amount = numSvc.round(amtforpenalty * rate)
