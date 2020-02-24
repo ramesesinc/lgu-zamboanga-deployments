@@ -8,10 +8,6 @@ class ZamboangaLedgerService {
 
 	@ProxyMethod
 	public def getLedgers(params) {
-		if (!params.searchtext) {
-			params.searchtext = ''
-		}
-		params.searchtext += '%'
-		return em.getLedgers(params)
+		return []
 	}
 }
