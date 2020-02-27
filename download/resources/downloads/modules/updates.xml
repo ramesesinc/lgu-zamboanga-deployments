@@ -1,6 +1,6 @@
 <app>
 <env>
-app.title=ETRACS 2.5 build 05 20200227_1035 (CITY OF ZAMBOANGA)
+app.title=ETRACS 2.5 build 05 20200227_1558 (CITY OF ZAMBOANGA)
 app.host=192.168.1.190:8070
 app.cluster=osiris3
 app.context=etracs25
@@ -88,6 +88,7 @@ entity.app.context=etracs25
 	<module file="bpls/rameses-gov-etracs-bpls.jar" version="2.50"/>
 	<module file="bpls/rameses-gov-etracs-bpls-reports.jar" version="2.50"/>
 	<module file="bpls/rameses-gov-etracs-bpls-ceo.jar" version="2.50"/>
+	<module file="bpls/rameses-gov-etracs-bpls-multireceipt.jar" version="2.50"/>
 
 	<!-- rptis -->
 	<module file="rptis/rameses-gov-etracs-rptis-landtax.jar" version="2.56"/>
