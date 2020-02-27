@@ -69,10 +69,14 @@ class ZamboangaPaymentPostingTask {
 	}
 
 	void updateLedgerInfo(pmt) {
-		//update lastyear/qtrpaid 
-		em_ledger.find([objid: pmt.refid])
-		         .update([lastyearpaid: pmt.toyear, lastqtrpaid: pmt.toqtr])
+		def ledger = em_ledger.select('lastyearpaid,lastqtrpaid').find([objid: pmt.refid]).first()
 
+		if (ledger) {
+			if ((ledger.lastyearpaid < pmt.toyear) || (ledger.lastyearpaid == pmt.toyear && ledger.lastqtrpaid < pmt.toqtr)) {
+				em_ledger.find([objid: pmt.refid])
+				         .update([lastyearpaid: pmt.toyear, lastqtrpaid: pmt.toqtr])
+			}
+		}
 		//delete ledger items
 		em_ledger_item.where('parentid = :parentid and year >= :year', [parentid: pmt.refid, year: pmt.toyear]).delete()
 	}
