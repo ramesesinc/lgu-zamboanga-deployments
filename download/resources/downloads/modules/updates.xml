@@ -32,7 +32,7 @@ entity.app.context=etracs25
 	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-rptis-report-td.jar" version="1.02"/>
-	<module file="custom/gov-zamboanga-rptis-report-faas.jar" version="1.00"/>
+	<module file="custom/gov-zamboanga-rptis-report-faas.jar" version="1.01"/>
 
 	<!-- core -->
 	<module file="core/osiris2-client-themes.jar" version="2.50"/>
