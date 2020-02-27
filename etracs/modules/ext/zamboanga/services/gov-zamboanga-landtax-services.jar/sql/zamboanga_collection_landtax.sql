@@ -1,5 +1,5 @@
 [getPaymentsForPosting]
-select top 5 * from zz_etracs_afor56_forposting order by ordate, orno 
+select top 25 * from zz_etracs_afor56_forposting order by ordate, orno 
 
 [moveToPosted]
 insert into zz_etracs_afor56_posted (orno, ordate, tdn, remarks)
