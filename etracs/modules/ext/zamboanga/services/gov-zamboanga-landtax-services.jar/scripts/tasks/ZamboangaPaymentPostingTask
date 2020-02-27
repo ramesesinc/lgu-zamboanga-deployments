@@ -23,7 +23,7 @@ class ZamboangaPaymentPostingTask {
 	def em_zamboanga_landtax
 
 
-	@Schedule(interval=10)
+	@Schedule(interval=1)
 	public void postPayment(task) {
 		em_zamboanga_landtax.getPaymentsForPosting().each{ortopost ->
 			if (isPaymentPosted(ortopost)) return 
