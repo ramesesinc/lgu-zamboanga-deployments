@@ -51,12 +51,16 @@ class ZamboangaPaymentPostingTask {
 	}
 
 	def isPaymentPosted(ortopost) {
-		def posted = em_rptpayment.find([receiptno: ortopost.orno, receiptdate: ortopost.ordate]).first() != null
-		if (posted) {
-			ortopost.remarks = 'Payment has already been posted.'
-			moveToPosted(ortopost)
+		def pmt = em_rptpayment.find([receiptno: ortopost.orno, receiptdate: ortopost.ordate]).first() 
+		if (pmt) {
+			def ledger = em_ledger.select('tdno').find([objid: pmt.refid]).first()
+			if (ledger && ledger.tdno == ortopost.tdn) {
+				ortopost.remarks = 'Payment has already been posted.'
+				moveToPosted(ortopost)
+				return true
+			}
 		}
-		return posted 
+		return false
 	}
 
 	def getLedgerFaas(ortopost) {
