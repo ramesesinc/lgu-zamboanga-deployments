@@ -18,7 +18,7 @@ services:
     volumes:
       - ../download/conf.d:/etc/nginx/conf.d
       - ../download/resources:/resources
-      - ../_custom/static_files:/others
+      - ../_custom/static_files:/resources/others
 
 
   etracs25-server:
