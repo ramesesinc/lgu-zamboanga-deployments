@@ -30,7 +30,7 @@ entity.app.context=etracs25
 	<module file="custom/gov-zamboanga-treasury-remittance-report.jar" version="1.04"/>
 	<module file="custom/gov-zamboanga-treasury-reports.jar" version="1.01"/>
 	<module file="custom/gov-zamboanga-treasury-main.jar" version="1.01"/>
-	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.01"/>
+	<module file="custom/gov-zamboanga-landtax-report-taxclearance.jar" version="1.02"/>
 	<module file="custom/gov-zamboanga-rptis-report-td.jar" version="1.02"/>
 	<module file="custom/gov-zamboanga-rptis-report-faas.jar" version="1.03"/>
 
@@ -59,7 +59,7 @@ entity.app.context=etracs25
 	<module file="shared/rameses-enterprise.jar" version="2.50"/>
 	<module file="shared/rameses-enterprise-admin.jar" version="2.50"/>
 	<module file="shared/rameses-enterprise-entity.jar" version="2.53"/>
-	<module file="shared/rameses-enterprise-entity-tool.jar" version="2.50"/>
+	<module file="shared/rameses-enterprise-entity-tool.jar" version="2.51"/>
 	<module file="shared/rameses-enterprise-financial.jar" version="2.50"/>
 	<module file="shared/rameses-client-notification2.jar" version="2.50"/>	
  
@@ -93,7 +93,7 @@ entity.app.context=etracs25
 	<!-- rptis -->
 	<module file="rptis/rameses-gov-etracs-rptis-landtax.jar" version="2.61"/>
 	<module file="rptis/rameses-gov-etracs-rptis-landtax-report.jar" version="2.57"/>
-	<module file="rptis/rameses-gov-etracs-rptis.jar" version="2.53"/>
+	<module file="rptis/rameses-gov-etracs-rptis.jar" version="2.54"/>
 	<module file="rptis/rameses-gov-etracs-rptis-report.jar" version="2.51"/>
 	<module file="rptis/rameses-gov-etracs-rptis-city.jar" version="2.51"/>
 

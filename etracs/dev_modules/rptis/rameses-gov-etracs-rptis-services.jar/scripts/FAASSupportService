@@ -46,6 +46,12 @@ class FAASSupportService
 	@Service('FAASStewardshipService')
 	def stewardshipSvc
 
+	@Service('LogService')
+	def logSvc
+
+	@DataContext('faas')
+	def em_faas
+
 
 	@ProxyMethod
 	public def findFaasById( faas ) {
@@ -201,17 +207,22 @@ class FAASSupportService
 
 	@ProxyMethod
 	public void changeModeToDataCapture( tdno ) {
-		if (!tdno) 
-			return
+		if (!tdno) return
 
-		def faas = faasSvc.getFaasByTdNo(tdno)
-		if (faas.state != 'INTERIM')
+		def faas = em_faas.select('objid,state,tdno').find([prevtdno: tdno]).first()
+		if (!faas) {
+			throw new Exception('FAAS ' + tdno + ' does not exist or has been deleted.\nVerify TD No. is correct.')
+		}
+		
+		if (faas.state != 'INTERIM') {
 			throw new Exception('FAAS state is invalid. Only INTERIM state is allowed.')
+		}
 
 		def f = [objid:faas.objid, datacapture:1, taskid:null, taskstate:null, assignee:null]
 		em.updateDataCaptureFlag(f)
 		faaslistDb.update(f)
 		em.deleteTasks(faas)
+		logSvc.logA('change_faas_txn_mode', 'faas', faas.objid, 'Change txn mode to capture.' )
 	}	
 
 
