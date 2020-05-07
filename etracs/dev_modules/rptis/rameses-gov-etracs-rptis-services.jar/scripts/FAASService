@@ -918,9 +918,9 @@ class FAASService
 	@ProxyMethod
 	public void cancelPreviousFaases(faas){
 		def pdate = dtSvc.parseDate(faas.approver.dtsigned, null)
-		em_faas_previous.where('faasid = :faasid and prevfaasid is not null', [faasid:faas.objid]).list().each{
+		em_faas_previous.where('faasid = :faasid', [faasid:faas.objid]).list().each{
 			if (!it.prevfaasid) {
-				it.prevfaasid = em_faas.select('objid').find([tdno: it.prevtdno]).first()?.objid 
+				it.prevfaasid = em_faas.select('objid').find([tdno: it.prevtdno, state: 'CURRENT']).first()?.objid 
 			}
 			if (it.prevfaasid) {
 				def params = [
