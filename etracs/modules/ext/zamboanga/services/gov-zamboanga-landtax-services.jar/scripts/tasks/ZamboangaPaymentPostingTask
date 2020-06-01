@@ -26,7 +26,7 @@ class ZamboangaPaymentPostingTask {
 	@Schedule(interval=1)
 	public void postPayment(task) {
 		em_zamboanga_landtax.getPaymentsForPosting().each{ortopost ->
-			if (isPaymentPosted(ortopost)) return 
+			// if (isPaymentPosted(ortopost)) return 
 
 			def lf = getLedgerFaas(ortopost)
 			if (!lf) return 
